@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moss"
+    tools:context="com.huytrieu.familybook.StartPageActivity">
+
+    <Button
+        android:id="@+id/already_have_account_button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/need_account_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/background_light"
+        android:padding="10dp"
+        android:text="already have an account?"
+        android:textColor="@color/gradStop"
+        android:textSize="20sp"
+        tools:textColor="@color/gradStop" />
+
+    <Button
+        android:id="@+id/need_account_button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/already_have_account_button"
+        android:layout_marginBottom="51dp"
+        android:background="@android:color/background_light"
+        android:padding="10dp"
+        android:text="need new account"
+        android:textColor="@color/gradStop"
+        android:textSize="20sp"
+        tools:textColor="@color/gradStop" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="182dp"
+        android:layout_height="177dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        app:srcCompat="@drawable/app_icon" />
+
+</RelativeLayout>

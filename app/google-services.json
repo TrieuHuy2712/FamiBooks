@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "98187394938",
+    "firebase_url": "https://famibook2.firebaseio.com",
+    "project_id": "famibook2",
+    "storage_bucket": "famibook2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98187394938:android:0c8df154d2bc5cfc",
+        "android_client_info": {
+          "package_name": "com.huytrieu.familybook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98187394938-76rnud16h5ds5rs7ia9rlpc4fjgescgf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "98187394938-76rnud16h5ds5rs7ia9rlpc4fjgescgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCohH-rwH0REZ2GAbt8gcEEcMPSkZMtxCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
