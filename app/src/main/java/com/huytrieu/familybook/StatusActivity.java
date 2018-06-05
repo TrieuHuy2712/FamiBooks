@@ -48,7 +48,34 @@ public class StatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String new_status = StatusInput.getText().toString();
+                ChangeProfileStatus(new_status);
             }
         });
+
+    }
+
+    private void ChangeProfileStatus(String new_status) {
+        if (TextUtils.isEmpty(new_status)){
+            Toast.makeText(this, "Please write status", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            loadingBar.setTitle("Changes profile status");
+            loadingBar.setMessage("Please wait.....");
+            loadingBar.show();
+            changeStatusRef.child("user_status").setValue(new_status)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Intent settingIntent = new Intent(StatusActivity.this, SettingsActivity.class);
+                                startActivity(settingIntent);
+                                Toast.makeText(StatusActivity.this, "Profile status updated successfully", Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                Toast.makeText(StatusActivity.this, "Error occured...", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
     }
 }
