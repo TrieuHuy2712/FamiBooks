@@ -28,22 +28,23 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageButton
-            android:padding="5dp"
             android:id="@+id/select_image"
-            android:src="@drawable/ic_select_image_to_send"
             android:layout_width="50dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_select_image_to_send" />
 
         <EditText
-            android:padding="10dp"
-            android:hint="Write a message"
             android:id="@+id/edt_message"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textMultiLine" />
+            android:hint="Write a message"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
         <ImageButton
             android:padding="5dp"
             android:id="@+id/btn_send"

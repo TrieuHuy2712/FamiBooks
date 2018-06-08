@@ -25,12 +25,11 @@
 
     <ImageView
         android:id="@+id/message_image_view"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@id/message_text"
         android:layout_marginLeft="2dp"
-        android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/profile"
-        />
+        android:src="@drawable/profile" />
 </RelativeLayout>

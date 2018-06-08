@@ -168,7 +168,7 @@ public class ChatActivity extends AppCompatActivity {
                 startActivityForResult(galleryIntent,Gallery_Pick);
             }
         });
-
+        SelectImageButton.setEnabled(false);
     }
 
     @Override

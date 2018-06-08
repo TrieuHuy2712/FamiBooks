@@ -41,7 +41,7 @@
         android:background="@drawable/search_text_background"
         android:ems="10"
         android:hint="Tìm kiếm"
-        android:inputType="textMultiLine"
+        android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="@color/gradStop"
         android:textColorHint="@color/gradStop"

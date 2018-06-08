@@ -113,6 +113,7 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivityForResult(galleryIntent,Gallery_Pick);
             }
         });
+        setttingChangeProfileButton.setEnabled(false);
         settingChangeStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
